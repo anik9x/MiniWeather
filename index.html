@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> MiniWeather </title>
+  <link rel="icon" href="icons/favicon/favicon1.ico" sizes="96x96">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body>
+
+  <!-- animated search bar -->
+  <main>
+    <input type="text" class="search" id="search" />
+    <div class="line-1" id="line-1"></div>
+    <div class="line-2" id="line-2"></div>
+  </main>
+
+  <div class="block1" id="block1">
+    <!-- fill this up using currentWeather data -->
+    <img id="img1" style="float: inline-start;">
+  </div>
+
+  <div class="block3" id="block3">
+    <span class="cityName"> </span>
+  </div>
+
+
+  <div class="block2" id="block2">
+    <img src="icons/png/windy-l.png" width="64" height="64">
+  </div>
+
+  <!-- dark mode toggle switch -->
+  <div class="toggle">
+    <div class="togglebutton">
+      <label class="switch">
+        <input type="checkbox" onclick="enableDarkMode()">
+        <span class="slider round" id="slider"></span>
+      </label>
+    </div>
+  </div>
+
+</body>
+
+</html>

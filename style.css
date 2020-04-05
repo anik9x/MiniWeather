@@ -1,0 +1,254 @@
+/* search bar - inspired from "https://codepen.io/ragnvaldpl/pen/RBXYgd" */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    background: #0a2239;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+main {
+    width: auto;
+    height: auto;
+}
+
+::selection {
+    background: #16a085;
+    color: #9ecfe1;
+}
+
+.line-1 {
+    width: 5px;
+    height: 40px;
+    background: #9ecfe1;
+    margin: auto;
+    position: relative;
+    left: 45px;
+    top: -20px;
+    transform: rotate(-45deg);
+    transition: .5s;
+    transition-timing-function: cubic-bezier(1, 0, .3, 1);
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+}
+
+.line-2 {
+    width: 5px;
+    height: 0px;
+    background: #9ecfe1;
+    margin: auto;
+    transform: rotate(-45deg);
+    position: relative;
+    left: 0;
+    top: -40px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    transition-timing-function: cubic-bezier(1, 0, .3, 1);
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+}
+
+.search {
+    font-weight: 900;
+    color: #9ecfe1;
+    font-family: 'Open Sans', sans-serif;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #9ecfe1;
+    border-radius: 100px;
+    cursor: default;
+    transition: .7s;
+    transition-timing-function: cubic-bezier(1, -0.5, 0, 1.5);
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 15px;
+    outline: none;
+    font-size: 32px;
+    background: transparent;
+    -webkit-transition: 0.5s;
+}
+
+::placeholder {
+    color: #6890A4;
+    font-size: 26px;
+}
+
+.active {
+    width: 500px;
+    height: 100px;
+    border: 5px solid #9ecfe1;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+/* dark mode */
+
+.dark-mode {
+    background-color: #9ecfe1;
+    color: #0a2239;
+}
+
+.search-dark {
+    border: 5px solid #0a2239;
+    color: #0a2239;
+    transition: .7s;
+    transition-timing-function: cubic-bezier(1, -0.5, 0, 1.5);
+    -webkit-transition: 0.5s;
+}
+
+.line-1-dark {
+    background: #0a2239;
+    transition: .5s;
+    transition-timing-function: cubic-bezier(1, 0, .3, 1);
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+}
+
+.line-2-dark {
+    background: #0a2239;
+    transition: .5s ease-in-out;
+    transition-timing-function: cubic-bezier(1, 0, .3, 1);
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+}
+
+.togglebutton {
+    position: absolute;
+    bottom: 8%;
+    right: 4%;
+}
+
+/* switch button - inspired from "https://www.w3schools.com/howto/howto_css_switch.asp" */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #9ecfe1;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #0a2239;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #0a2239;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: #9ecfe1;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+    background-color: #0a2239;
+}
+
+/* test */
+
+.block1 {
+    position: absolute;
+    bottom: 37.5%;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #9ecfe1;
+
+    margin: auto;
+    width: 13.5%;
+    height: 20%;
+    /*border: 3px solid #73AD21;*/
+    padding: 10px;
+
+    display: block;
+
+    /*border-bottom: 2.5px dashed #9ecfe1;*/
+}
+
+.block3 {
+    position: absolute;
+    bottom: 17.5%;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #9ecfe1;
+
+    margin: auto;
+    width: 80%;
+    height: 20%;
+    /*border: 3px solid #73AD21;*/
+}
+
+.block1 img {
+    
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;  
+    
+    display: block;
+}
+
+.cityName {
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+
+    margin-bottom: -5%;
+
+    display: block;
+}
+
+.block2 {
+    position: absolute;
+    align-items: center;
+    bottom: 15%;
+}
