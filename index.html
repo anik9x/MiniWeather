@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="app.js"></script>
+  <script src="https://buttons.github.io/buttons.js"></script>
 </head>
 
 <body>
@@ -21,25 +22,55 @@
     <div class="line-2" id="line-2"></div>
   </main>
 
+  <!-- city/town icon -->
   <div class="block1" id="block1">
-    <!-- fill this up using currentWeather data -->
     <img id="img1" style="float: inline-start;">
   </div>
 
-  <div class="block3" id="block3">
-    <span class="cityName"> </span>
+  <div class="name" id="name">
+    <img class="imgName" id="imgName" src="pic1.png" height="128" width="458" style="float: inline-start;">
   </div>
 
+  <!-- temperature infornamation -->
+  <div class="blockLeft" id="block2">
+    <img id="imgLeft">
+  </div>
 
-  <div class="block2" id="block2">
-    <img src="icons/png/windy-l.png" width="64" height="64">
+  <div class="arrowLeft">
+    <img id="aL">
+  </div>
+
+  <div class="textLeft" id="textLeft">
+    <p class="tL"> </p>
+  </div>
+
+  <div class="textLeft2" id="textLeft2">
+    <p class="tL2"> </p>
+  </div>
+
+  <!-- weather description -->
+  <div class="blockRight" id="blockRight">
+    <img id="imgRight">
+  </div>
+
+  <div class="arrowRight">
+    <img id="aR">
+  </div>
+
+  <div class="textRight" id="textRight">
+    <p class="tR"> </p>
+  </div>
+
+  <!-- city/town information -->
+  <div class="block4" id="block4">
+    <span class="cityName"> </span>
   </div>
 
   <!-- dark mode toggle switch -->
   <div class="toggle">
     <div class="togglebutton">
       <label class="switch">
-        <input type="checkbox" onclick="enableDarkMode()">
+        <input type="checkbox" onclick="enableDarkMode();myFunction()">
         <span class="slider round" id="slider"></span>
       </label>
     </div>

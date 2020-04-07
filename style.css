@@ -4,6 +4,8 @@
 
 body {
     width: 100%;
+    min-width: 1366px;
+    max-height: 768px;
     height: 50vh;
     margin: 0;
     padding: 0;
@@ -56,7 +58,7 @@ main {
 }
 
 .search {
-    font-weight: 900;
+    font-weight: 500;
     color: #9ecfe1;
     font-family: 'Open Sans', sans-serif;
     width: 100px;
@@ -101,6 +103,8 @@ main {
     transition: .7s;
     transition-timing-function: cubic-bezier(1, -0.5, 0, 1.5);
     -webkit-transition: 0.5s;
+    font-weight: 700;
+    font-size: 32px;
 }
 
 .line-1-dark {
@@ -188,7 +192,7 @@ input:checked+.slider:before {
     background-color: #0a2239;
 }
 
-/* test */
+/* block at the top */
 
 .block1 {
     position: absolute;
@@ -200,17 +204,286 @@ input:checked+.slider:before {
     color: #9ecfe1;
 
     margin: auto;
-    width: 13.5%;
+    width: 15%;
     height: 20%;
     /*border: 3px solid #73AD21;*/
     padding: 10px;
 
     display: block;
-
-    /*border-bottom: 2.5px dashed #9ecfe1;*/
 }
 
-.block3 {
+.block1 img {
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+
+    display: block;
+}
+
+.name {
+    position: absolute;
+    bottom: 32.5%;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #9ecfe1;
+
+    border: 5px dashed #9ecfe1;
+    border-radius: 50px;
+
+    margin: auto;
+    width: 35%;
+    height: 20%;
+    /*border: 3px solid #73AD21;*/
+    padding: 10px;
+
+    display: block;
+}
+
+.name-dark {
+    position: absolute;
+    bottom: 32.5%;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #9ecfe1;
+
+    border: 5px dashed #0a2239;
+    border-radius: 50px;
+
+    margin: auto;
+    width: 35%;
+    height: 20%;
+    /*border: 3px solid #73AD21;*/
+    padding: 10px;
+
+    display: block;
+}
+
+.name img {
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+
+    display: block;
+
+    bottom: -8%;
+}
+
+/* left-hand side block and elements */
+
+.blockLeft {
+    position: absolute;
+    bottom: 44%;
+    left: 3%;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #9ecfe1;
+
+    margin: auto;
+    width: 25%;
+    height: 20%;
+    /*border: 3px solid red;*/
+
+    padding: 10px;
+    display: block;
+}
+
+.blockLeft img, .arrowLeft img {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    position: absolute;
+    align-items: center;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    vertical-align: middle;
+}
+
+.arrowLeft {
+    position: absolute;
+    bottom: 37.5%;
+    left: 20%;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #9ecfe1;
+
+    margin: auto;
+    width: 25%;
+    height: 20%;
+    /*border: 3px solid orange;*/
+
+    padding: 10px;
+    display: block;
+}
+
+#aL {
+    transform: rotate(180deg);
+}
+
+.textLeft {
+    position: absolute;
+    bottom: 29.5%;
+    left: 3%;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #9ecfe1;
+
+    margin: auto;
+    width: 25%;
+    height: 20%;
+    /*border: 3px solid green;*/
+
+    padding: 10px;
+    display: block;
+}
+
+.textLeft2 {
+    position: absolute;
+    bottom: 23%;
+    left: 3%;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #9ecfe1;
+
+    margin: auto;
+    width: 25%;
+    height: 20%;
+    /*border: 3px solid green;*/
+
+    padding: 10px;
+    display: block;
+}
+
+.textLeft p, .textLeft2 p {
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: -5%;
+    display: block;
+}
+
+.textLeft-dark {
+    color: #0a2239;
+    font-weight: 700;
+}
+
+/* right-hand side block and elements */
+
+.blockRight {
+    position: absolute;
+    bottom: 40%;
+    right: 3%;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #9ecfe1;
+
+    margin: auto;
+    width: 25%;
+    height: 20%;
+    /*border: 3px solid red;*/
+
+    padding: 10px;
+    display: block;
+}
+
+.blockRight img, .arrowRight img{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    position: absolute;
+    align-items: center;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    vertical-align: middle;
+}
+
+.arrowRight {
+    position: absolute;
+    bottom: 37.5%;
+    right: 20%;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #9ecfe1;
+
+    margin: auto;
+    width: 25%;
+    height: 20%;
+    /*border: 3px solid orange;*/
+
+    padding: 10px;
+    display: block;
+}
+
+.textRight {
+    position: absolute;
+    bottom: 26.5%;
+    right: 3%;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #9ecfe1;
+
+    margin: auto;
+    width: 25%;
+    height: 20%;
+    /*border: 3px solid green;*/
+
+    padding: 10px;
+    display: block;
+}
+
+.textRight-dark {
+    color: #0a2239;
+    font-weight: 700;
+}
+
+.textRight p {
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: -5%;
+    display: block;
+}
+
+/* block at the bottom */
+
+.block4 {
     position: absolute;
     bottom: 17.5%;
 
@@ -225,14 +498,18 @@ input:checked+.slider:before {
     /*border: 3px solid #73AD21;*/
 }
 
-.block1 img {
-    
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    align-items: center;  
-    
-    display: block;
+.block4-dark {
+    position: absolute;
+    bottom: 17.5%;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0a2239;
+
+    margin: auto;
+    width: 80%;
+    height: 20%;
 }
 
 .cityName {
@@ -241,14 +518,9 @@ input:checked+.slider:before {
     margin-right: auto;
     position: relative;
     text-align: center;
-
     margin-bottom: -5%;
-
     display: block;
 }
 
-.block2 {
-    position: absolute;
-    align-items: center;
-    bottom: 15%;
-}
+
+/* testing */
